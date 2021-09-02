@@ -2,6 +2,8 @@
 NUMPROCS=$(sysctl -n hw.logicalcpu)
 
 brew update
+brew install wget python cmake || true
+cmake --version
 
 # Install Ceres and Eigen dependencies
 brew install ceres-solver
