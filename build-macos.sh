@@ -3,9 +3,11 @@ NUMPROCS=$(sysctl -n hw.logicalcpu)
 
 brew update
 
+# Install Ceres and Eigen dependencies
 brew install ceres-solver
 brew install eigen
 
+# Build OpenMVG
 git clone --recursive https://github.com/openMVG/openMVG.git
 
 mkdir openMVG_Build
