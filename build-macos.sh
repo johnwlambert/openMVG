@@ -9,6 +9,9 @@ cmake --version
 brew install ceres-solver
 brew install eigen
 
+# Check Eigen version
+cat /usr/local/include/eigen3/Eigen/src/Core/util/Macros.h | grep VERSION
+
 # Build OpenMVG
 git clone --recursive https://github.com/openMVG/openMVG.git
 
