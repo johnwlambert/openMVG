@@ -1,4 +1,5 @@
 
+# we will use all available cores to build
 NUMPROCS=$(sysctl -n hw.logicalcpu)
 
 brew update
@@ -12,7 +13,7 @@ brew install eigen
 # Check Eigen version
 cat /usr/local/include/eigen3/Eigen/src/Core/util/Macros.h | grep VERSION
 
-# Build OpenMVG
+# Build OpenMVG from latest develop branch
 git clone --recursive https://github.com/openMVG/openMVG.git
 
 mkdir openMVG_Build
